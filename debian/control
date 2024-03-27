@@ -1033,7 +1033,6 @@ Pre-Depends:
  ${misc:Pre-Depends},
 Depends:
  libopencv-core3.4 (= ${binary:Version}),
- libvtk6.3,
  ${misc:Depends},
  ${shlibs:Depends},
 Description: computer vision 3D data visualization library
