@@ -8,7 +8,7 @@ Uploaders:
  Mo Zhou <cdluminate@gmail.com>,
 Build-Depends: ant [!hppa !hurd-any !kfreebsd-any],
  cmake,
- debhelper-compat (>= 11),
+ debhelper (>= 11),
  default-jdk [!hppa !hurd-any !kfreebsd-any],
  dh-sequence-python3,
  doxygen,
