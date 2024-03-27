@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Add library path to ld.conf
+echo "/usr/local/opencv34/lib" >> /etc/ld.so.conf
+
+echo "export CMAKE_PREFIX_PATH=\$CMAKE_PREFIX_PATH:/usr/local/opencv34" >> /etc/profile
+
+echo "export PKG_CONFIG_PATH=\$PKG_CONFIG_PATH:/usr/local/opencv34/lib/pkgconfig" >> /etc/profile
+
+# Reload ldconfig
+ldconfig

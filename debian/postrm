@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Remove library path from ld.conf
+sed -i '/\/usr\/local\/opencv34\/lib/d' /etc/ld.so.conf
+
+sed -i '/export CMAKE_PREFIX_PATH=\$CMAKE_PREFIX_PATH:\/usr\/local\/opencv34/d' /etc/profile
+
+sed -i '/export PKG_CONFIG_PATH=\$PKG_CONFIG_PATH:\/usr\/local\/opencv34\/lib\/pkgconfig/d' /etc/profile
+
+# Reload ldconfig
+ldconfig
